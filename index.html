@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>7hefg/packages</title>
+<title>7he</title>
 <style>
 :root { color-scheme: light; --ink: #1f232b; --page: #f2f2f7; }
 * { box-sizing: border-box; }
@@ -32,7 +32,7 @@ a.open { color: #007aff; text-decoration: underline; }
 <body>
 <main class="card">
 <img class="icon" src="CydiaIcon.png" alt="">
-<p class="title" id="title"></p>
+<p class="title" id="title">7he</p>
 <p class="dim" id="address"></p>
 <img class="qr" id="qr" src="qr.svg" alt="">
 <p class="dim">Scan with Camera to add in Irisin</p>
@@ -42,8 +42,8 @@ a.open { color: #007aff; text-decoration: underline; }
 <script>
 const repository = "7hefg/packages";
 const source = new URL(".", location.href).href;
-const [owner, name] = repository.split("/");
-document.getElementById("title").textContent = name || repository;
+const [owner] = repository.split("/");
+document.getElementById("title").textContent = "7he";
 document.getElementById("address").textContent = source.replace(/^https?:[/][/]/, "").replace(/[/]+$/, "");
 document.getElementById("owner").textContent = "@" + owner;
 document.getElementById("open").href = "irisin://repository/add?url=" + encodeURIComponent(source);
